@@ -1,0 +1,55 @@
+@media only screen and (max-width: 568px){  
+    .card{
+        max-width: 90%;
+        flex-direction: column;
+        margin:0px;
+        height: 90%;
+        max-height: 610px;
+        
+        &__image{
+            width: 100%;
+            .desktop__img{
+                display: none;
+            }
+            .mobile__img{
+                display: block;
+                object-fit: cover;
+                width: 100%;
+            }
+       
+        }
+        &__rightSide{            
+            height: 70%;
+            width: 100%;
+            padding: 0px 20px;
+            &__info{
+                height: 53%;
+                margin: 10px 0px;
+                            
+                h1{
+                    font-size: 30px;
+                }
+                p{
+                    font-size: 13px;
+                }
+            }
+            &__sale{
+                justify-content: space-evenly;
+                height: 40%;
+                &__price{
+                    padding-right: 100px;
+                    p{
+                        font-size: 13px;
+                    }
+                }
+                button{
+                    margin-bottom: 0px;
+                }
+            }
+        }
+        
+    }
+    .attribution{
+        display: none;
+    }
+}

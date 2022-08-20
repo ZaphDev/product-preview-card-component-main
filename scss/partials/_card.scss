@@ -1,34 +1,94 @@
 .card{
     display: flex;
     background-color: white;
-    margin: 12rem 30%;
-    align-items: center;    
-    border-radius: 10px;    
+    margin: auto;      
+    border-radius: 10px;
+    width: 600px;
+    height: 450px;
+    overflow: hidden;    
     
     &__image{
-        img{
+        width: 50%;
+        .mobile__img{
+            display: none;
+        }
+        .desktop__img{
             width: 100%;
-            border-radius: 10px 0px 0px 10px;
-        }
-    }
-    &__info{
-        h1{
-            font-family: 'Fraunces', serif;
+            height: 100%;
+            object-fit:cover;
             
-            color: hsl(212, 21%, 14%);
-        }
-        p{
-            font-family: 'Montserrat', sans-serif;
-            font-size: 12px;
-            color: hsl(228, 12%, 48%)
         }
     }
-    &__price{
-        display: flex;
-        justify-content:space-evenly;
-        align-items: center;
-        h1{
-            color: hsl(158, 36%, 37%) ;
+    &__rightSide{
+       padding: 0px 30px;
+       width: 50%;
+        &__info{
+            display:flex;
+            flex-direction: column;
+            justify-content: space-evenly;            
+            height:68%;
+            .minititle{
+                font-size: 12px;
+            }
+            
+            h1{
+                font-family: 'Fraunces', serif;
+                line-height: 1;
+                font-weight: 700;
+                color: hsl(212, 21%, 14%);
+                
+            }
+            p{
+                font-family: 'Montserrat', sans-serif;
+                font-size: 14px;
+                color: hsl(228, 12%, 48%);
+                line-height: 1.7;
+                            
+            }
+        }
+        &__sale{
+            height: 30%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            &__price{
+                display: flex;
+                justify-content:space-between;
+                align-items: center;
+                padding-right: 40px;
+                h1{
+                    font-family: 'Fraunces', serif;
+                    font-weight: 700;
+                    color: hsl(158, 36%, 37%) ;
+                }
+                p{
+                    font-family: 'Montserrat', sans-serif;
+                    font-size: 14px;
+                    color: hsl(228, 12%, 48%);
+                    text-decoration:line-through;
+                }
+            }
+            button{
+                display: flex;
+                justify-content: center; 
+                width: 100%;               
+                font-family: 'Montserrat', sans-serif;
+                font-size: 14px;
+                padding: 14px;
+                margin-bottom: 30px;
+                color: white;
+                background-color: hsl(158, 36%, 37%) ;
+                border-radius: 5px;
+                border: none;
+                &:hover{
+                    background-color: hsl(158, 28%, 20%) ;
+                }
+                svg{
+                    margin-right: 10px;
+                }
+            
+            }
         }
     }
+       
 }
